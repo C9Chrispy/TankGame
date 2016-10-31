@@ -1,0 +1,33 @@
+Christopher Lu
+Genre: Turn-Based Shooter
+Name: Arrow Elite
+
+Mode 1: Best of Five || Person vs Person
+	Goal: In a 1 v 1 match, be the first player to hit the other person 5 times.
+	Basic Mechanics: The player and the opponent will be equipped with an infinite number of arrows. 
+	The player will have to choose both the power and angle of the shot. 
+	The computer will prompt the user to input an angle between 0 and 365 degrees (integer).
+	The computer will then prompt the user to input the power of the shot between 0 and 100 (integer).
+	After the user provides these two values, the user's character will shoot the arrow.
+	If the player hits the opponent, the player will gain a point.
+	The opponent will then have the same opportunity to hit the player.
+	Both the player and the opponent will be allowed to move up to 100 pixels away from their current position, but if this is done, the player/opponent's turn is over and will not be allowed to fire a shot for the turn.
+	First to 5 points wins the round.
+	The terrain will be randomly generated. Every 20 pixels in the x direction will be placed at a partially random height.
+	The player and opponent will be placed in random locations that are a minimum distance away from each other at the beginning of the game.
+	
+Mode 2: Shop screen
+	The loser of the previous round will be allowed to choose among 5 power ups.
+	Power up 1 -- FADEAWAY: The user of this power up can both move AND shoot during the same turn.
+	Power up 2 -- SMOKE ARROW: If the user of this power up hits the other player, the other player will be shrouded in smoke and the location of the person who fired this arrow will become unknown.
+		The person who fired this arrow will then be prompted to move up to 100 pixels away (or no distance at all). This ability lasts one turn. Hitting the other player with a smoke arrow does not grant the other user points.
+	Power up 3 -- QUICK CEMENT: If the user of this power up hits the other player, the other player will not be able to move for 2 turns. The player who fired QUICK CEMENT will not gain any points for this shot.
+	Power up 4 -- USANE BOLT: The user of this power up can move up to 200 pixels in any direction.
+	Power up 5 -- TANK: If one player gets this power up, the other player has to hit the TANK 6 times to win the round.
+	
+Scenes:
+Start Screen -- Splash art, start button, controls button.
+Fight Screen -- The actual in game arena.
+Shop Screen -- A shop that displays all 5 items available to the loser of the previous round. Unavailable items will be marked with a red X.
+Game Over Screen -- A Screen displaying "Player __ has won!". Returns to the start screen upon any key being pressed. 
+
